@@ -10,12 +10,6 @@ import { Routes,Route, useNavigate } from 'react-router-dom'
 function App() {
   
   const [action, setAction] = useState("Login Now")
-//   const[productdata,setProductdata] = useState([])
-// const navigate =useNavigate()
-
-// const addproduct =()=>{
-//   navigate('/products')
-// }
 
   return (
   <>
@@ -49,11 +43,7 @@ function App() {
         </div>
         </div>
     
-        {/* <FormGroup>
-      <FormControlLabel control={<Checkbox defaultChecked />} label="Label" />
-      <FormControlLabel required control={<Checkbox />} label="Required" />
-      <FormControlLabel disabled control={<Checkbox />} label="Disabled" />
-    </FormGroup> */}
+       
         {action==="Create Account"?<div></div>:   <div className="forgot-password">Forget password?<span>Click here!</span></div>}
    
         <div className="submit-container">
